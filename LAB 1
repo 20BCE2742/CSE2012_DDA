@@ -32,3 +32,27 @@ int main() {
   else
   cout<<arr[x-1];
 }
+
+
+#include <iostream>
+using namespace std;
+int main() {
+  int n;
+  int fact(int n);
+  cin>>n;
+  int ans=fact(n);
+  cout<<ans;
+}
+int fact(int n)
+{
+if(n<0)    
+return(-1);      
+if(n==0)    
+return(1);      
+else    
+  {    
+  return(n*fact(n-1));  
+  }
+}
+
+
